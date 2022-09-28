@@ -1,11 +1,175 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
-<center>
-  <h1>UNIVERSITAS SULTAN AGENG TIRTAYASA</h1>
-  <img src="{% static 'img/untirtarektorat.jpeg' %}" alt="Logo Untirta" width="1200px" />
-  <p>
-    Universitas Sultan Ageng Tirtayasa dimulai dengan berdirinya Yayasan Pendidikan Tirtayasa pada tanggal 1 oktober 1980 berdasarkan Akte Notaris No: 1 Tahun 1980, kemudian dilakukan penyempurnaan dan dikukuhkan kembali dengan akte Notaris
-    Ny. R.Arie Soetardjo, Nomor 1, Tanggal 3 Maret 1986.
-  </p>
-</center>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-{% endblock %}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+
+    <!-- My Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet" />
+
+    <!-- My Fontawesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>UNTIRTA | Universitas Sultan Ageng Tirtayasa</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="static/img/logountirta.jpg" width="40" height="40" alt="logo" /> UNTIRTA </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Fakultas </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Fakultas Pertanian</a>
+                <a class="dropdown-item" href="#">Fakultas Ekonomi dan Bisnis</a>
+                <a class="dropdown-item" href="#">Fakultas Hukum</a>
+                <a class="dropdown-item" href="#">Fakultas Ilmu Sosial dan Ilmu Pemerintah</a>
+                <a class="dropdown-item" href="#">Fakultas Kedokteran</a>
+                <a class="dropdown-item" href="#">Fakultas Keguruan dan Ilmu Pendidikan</a>
+                <a class="dropdown-item" href="#">Fakultas Teknik</a>
+                <a class="dropdown-item" href="#">Pascasarjana</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kalender Akademik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/untirta.banten.5">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/untirta_official/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/HumasUntirta">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:humas@untirta.ac.id">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Universitas Sultan Ageng Tirtayasa</h1>
+        <a href="" class="btn btn-outline-primary tombol">Tentang Untirta</a>
+      </div>
+    </div>
+    <!-- Akhir Jumbotron -->
+
+    <!-- container -->
+
+    <!-- akhir container -->
+    <div class="container">
+      <!-- Info Panel -->
+      <div class="row justify-content-center">
+        <div class="col-10 info-panel">
+          <div class="row">
+            <div class="col-lg">
+              <i class="float-left fa-solid fa-users fa-4x"></i>
+              <h2>777</h2>
+              <p>Dosen</p>
+            </div>
+            <div class="col-lg">
+              <i class="float-left fa-solid fa-graduation-cap fa-4x"></i>
+              <h2>557</h2>
+              <p>Magister</p>
+            </div>
+            <div class="col-lg">
+              <i class="float-left fa-solid fa-user-graduate fa-4x"></i>
+              <h2>212</h2>
+              <p>Doktor</p>
+            </div>
+            <div class="col-lg">
+              <i class="float-left fa-solid fa-chalkboard-user fa-4x"></i>
+              <h2>19</h2>
+              <p>Guru Besar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Akhir Info Panel -->
+
+      <!-- Workingspace -->
+      <div class="row workingspace">
+        <div class="col-lg-6">
+          <img src="static/img/depanuntirta.jpeg" alt="workingspace" class="img-fluid" />
+        </div>
+        <div class="col-lg-5">
+          <h3>Untirta Jawara</h3>
+          <p>Inovasi, kolaborasi dan harmonisasi UNTIRTA Jawara untuk Indonesia maju</p>
+          <a href="" class="btn btn-primary tombol">Penghargaan</a>
+        </div>
+      </div>
+      <!-- Akhir Workingspace -->
+
+      <!-- Testimonial -->
+      <section class="testimonial">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h5>"In my experience, I felt great time studying at Universitas Sultan Ageng Tirtayasa. The academics atmosphere was amazing. I like the class room situation in teaching learning process."</h5>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6 justify-content-center d-flex">
+            <figure class="figure">
+              <img src="static/img/img1.jpeg" class="figure-img img-fluid rounded-circle" alt="Testi 1" />
+            </figure>
+            <figure class="figure">
+              <img src="static/img/img2.jpeg" class="figure-img img-fluid rounded-circle utama" alt="Testi 2" />
+              <figcaption class="figure-caption">
+                <h5>Keese Ngabwe</h5>
+                <span>Zambian Student</span>
+              </figcaption>
+            </figure>
+            <figure class="figure">
+              <img src="static/img/img3.jpeg" class="figure-img img-fluid rounded-circle" alt="Testi 3" />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- Akhir Testimonial -->
+
+      <!-- Footer -->
+      <div class="row footer">
+        <div class="col text-center">
+          <p>2022 All Right Reserved by Aisyah Amelia|Project TIK</p>
+        </div>
+      </div>
+      <!-- Akhir Footer -->
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
