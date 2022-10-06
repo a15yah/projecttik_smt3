@@ -1,5 +1,16 @@
 from django.shortcuts import render
+from . models import Dosen, Tenaga_Pendidik, Mahasiswa
 
 # Create your views here.
 def fk(request):
-    return render(request, 'fk/index.html')
+    dosen = Dosen.objects.all()
+    tenagaPendidik = Tenaga_Pendidik.objects.all()
+    mahasiswa = Mahasiswa.objects.all()
+
+    context = {
+        'dataDosen': dosen,
+        'dataTenagaPendidik': tenagaPendidik,
+        'dataMahasiswa': mahasiswa,
+    }
+    
+    return render(request, 'fk/index.html', context)
